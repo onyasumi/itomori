@@ -17,5 +17,5 @@ rustup target add aarch64-unknown-none
 then
 
 ```sh
-cargo build --target aarch64-unknown-none
+cargo rustc --target aarch64-unknown-none -- -C link-arg=--script=./linker.ld
 ```
